@@ -1,0 +1,165 @@
+{
+  "entities": {
+    "重点高校及其下属机构": {
+      "id": "ORG_0",
+      "text": "重点高校及其下属机构",
+      "type": "ORG",
+      "properties": {
+        "context": "一、重点高校及其下属机构",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "清华大学": {
+      "id": "ORG_1",
+      "text": "清华大学",
+      "type": "ORG",
+      "properties": {
+        "context": "清华大学计算机系人工智能实验室是国内顶尖的AI研究团队",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "电子工程系信号处理研究所": {
+      "id": "ORG_2",
+      "text": "电子工程系信号处理研究所",
+      "type": "ORG",
+      "properties": {
+        "context": "清华大学电子工程系信号处理研究所长期从事图像处理研究",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "北京大学信息科学技术学院": {
+      "id": "ORG_3",
+      "text": "北京大学信息科学技术学院",
+      "type": "ORG",
+      "properties": {
+        "context": "北京大学信息科学技术学院智能科学系在自然语言处理方面有深入研究",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "科院是中国最高的学术机构": {
+      "id": "ORG_4",
+      "text": "科院是中国最高的学术机构",
+      "type": "ORG",
+      "properties": {
+        "context": "中科院是中国最高的学术机构",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "中国科学院计算技术研究所": {
+      "id": "ORG_5",
+      "text": "中国科学院计算技术研究所",
+      "type": "ORG",
+      "properties": {
+        "context": "中国科学院计算技术研究所智能信息处理重点实验室开发了多款智能软件",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "华为技术有限公司": {
+      "id": "ORG_6",
+      "text": "华为技术有限公司",
+      "type": "ORG",
+      "properties": {
+        "context": "华为技术有限公司的5G技术处于世界领先地位",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "讯是中国最大的互联网公司": {
+      "id": "ORG_7",
+      "text": "讯是中国最大的互联网公司",
+      "type": "ORG",
+      "properties": {
+        "context": "腾讯是中国最大的互联网公司之一",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "腾讯控股有限公司": {
+      "id": "ORG_8",
+      "text": "腾讯控股有限公司",
+      "type": "ORG",
+      "properties": {
+        "context": "腾讯控股有限公司开发了微信和QQ等社交软件",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "负责公司": {
+      "id": "ORG_9",
+      "text": "负责公司",
+      "type": "ORG",
+      "properties": {
+        "context": "李华担任首席技术官，负责公司的技术战略",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "主管公司": {
+      "id": "ORG_10",
+      "text": "主管公司",
+      "type": "ORG",
+      "properties": {
+        "context": "王芳是首席运营官，主管公司日常运营",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "华兴科技与清华大学": {
+      "id": "ORG_11",
+      "text": "华兴科技与清华大学",
+      "type": "ORG",
+      "properties": {
+        "context": "华兴科技与清华大学建立了产学研合作关系",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "公司与北京大学": {
+      "id": "ORG_12",
+      "text": "公司与北京大学",
+      "type": "ORG",
+      "properties": {
+        "context": "公司与北京大学共同申请了多项国家科研项目",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "资了智能医疗科技有限公司": {
+      "id": "ORG_13",
+      "text": "资了智能医疗科技有限公司",
+      "type": "ORG",
+      "properties": {
+        "context": "华兴科技投资了智能医疗科技有限公司和自动驾驶技术有限公司",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "和自动驾驶技术有限公司": {
+      "id": "ORG_14",
+      "text": "和自动驾驶技术有限公司",
+      "type": "ORG",
+      "properties": {
+        "context": "华兴科技投资了智能医疗科技有限公司和自动驾驶技术有限公司",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "上海市浦东新区设有分公司": {
+      "id": "ORG_15",
+      "text": "上海市浦东新区设有分公司",
+      "type": "ORG",
+      "properties": {
+        "context": "公司在上海市浦东新区设有分公司",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    }
+  },
+  "relations": []
+}

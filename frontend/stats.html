@@ -204,6 +204,8 @@
         .type-badge.LOCATION { background: rgba(255,209,102,0.2); color: #ffd166; }
         .type-badge.TIME { background: rgba(168,130,255,0.2); color: #a882ff; }
         .type-badge.CONCEPT { background: rgba(102,255,204,0.2); color: #66ffcc; }
+        .type-badge.EVENT { background: rgba(255,159,67,0.2); color: #ff9f43; }
+        .type-badge.OTHER { background: rgba(136,136,136,0.2); color: #888; }
 
         /* 热门实体 */
         .hot-entity {
@@ -395,6 +397,49 @@
         const API_BASE = '';
         let entityTypeChart, relationTypeChart;
 
+        // 实体类型的固定颜色和中文名称，颜色必须按类型映射而不是按返回顺序分配
+        const ENTITY_TYPE_COLORS = {
+            PERSON: '#ff6b6b',
+            ORG: '#4ecdc4',
+            LOCATION: '#ffd166',
+            TIME: '#a882ff',
+            CONCEPT: '#66ffcc',
+            EVENT: '#ff9f43',
+            OTHER: '#888888'
+        };
+        const ENTITY_TYPE_NAMES = {
+            PERSON: '人物',
+            ORG: '组织',
+            LOCATION: '地点',
+            TIME: '时间',
+            CONCEPT: '概念',
+            EVENT: '事件',
+            OTHER: '其他'
+        };
+        const ENTITY_TYPE_ORDER = ['PERSON', 'ORG', 'LOCATION', 'TIME', 'CONCEPT', 'EVENT', 'OTHER'];
+        const FALLBACK_ENTITY_COLORS = ['#5b8ff9', '#5ad8a6', '#f6bd16', '#e86452', '#6dc8ec', '#945fb9'];
+
+        function getEntityTypeColor(type, index) {
+            return ENTITY_TYPE_COLORS[type]
+                || FALLBACK_ENTITY_COLORS[index % FALLBACK_ENTITY_COLORS.length];
+        }
+
+        function getEntityTypeName(type) {
+            return ENTITY_TYPE_NAMES[type] || type;
+        }
+
+        function sortEntityTypes(types) {
+            return [...types].sort((a, b) => {
+                const indexA = ENTITY_TYPE_ORDER.indexOf(a);
+                const indexB = ENTITY_TYPE_ORDER.indexOf(b);
+                const normalizedA = indexA === -1 ? ENTITY_TYPE_ORDER.length : indexA;
+                const normalizedB = indexB === -1 ? ENTITY_TYPE_ORDER.length : indexB;
+                return normalizedA !== normalizedB
+                    ? normalizedA - normalizedB
+                    : a.localeCompare(b, 'zh-CN');
+            });
+        }
+
         // 初始化
         document.addEventListener('DOMContentLoaded', () => {
             loadAllData();
@@ -478,11 +523,9 @@
                 entityTypeChart.destroy();
             }
 
-            const labels = Object.keys(entityCounts);
-            const values = Object.values(entityCounts);
-            const colors = [
-                '#ff6b6b', '#4ecdc4', '#ffd166', '#a882ff', '#66ffcc', '#888'
-            ];
+            const types = sortEntityTypes(Object.keys(entityCounts));
+            const labels = types.map(getEntityTypeName);
+            const values = types.map(type => entityCounts[type] ?? 0);
 
             entityTypeChart = new Chart(ctx, {
                 type: 'doughnut',
@@ -490,7 +533,7 @@
                     labels: labels,
                     datasets: [{
                         data: values,
-                        backgroundColor: colors.slice(0, labels.length),
+                        backgroundColor: types.map((type, index) => getEntityTypeColor(type, index)),
                         borderWidth: 0
                     }]
                 },

@@ -1,0 +1,115 @@
+{
+  "entities": {
+    "大学信息科学技术": {
+      "id": "CONCEPT_0",
+      "text": "大学信息科学技术",
+      "type": "CONCEPT",
+      "properties": {
+        "context": "北京大学信息科学技术学院智能科学系在自然语言处理方面有深入研究",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "国科学院计算技术": {
+      "id": "CONCEPT_1",
+      "text": "国科学院计算技术",
+      "type": "CONCEPT",
+      "properties": {
+        "context": "中国科学院计算技术研究所智能信息处理重点实验室开发了多款智能软件",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "华为技术": {
+      "id": "CONCEPT_2",
+      "text": "华为技术",
+      "type": "CONCEPT",
+      "properties": {
+        "context": "华为技术有限公司的5G技术处于世界领先地位",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "李华担任首席技术": {
+      "id": "CONCEPT_3",
+      "text": "李华担任首席技术",
+      "type": "CONCEPT",
+      "properties": {
+        "context": "李华担任首席技术官，负责公司的技术战略",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "负责公司的技术": {
+      "id": "CONCEPT_4",
+      "text": "负责公司的技术",
+      "type": "CONCEPT",
+      "properties": {
+        "context": "李华担任首席技术官，负责公司的技术战略",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "刘伟是算法": {
+      "id": "CONCEPT_5",
+      "text": "刘伟是算法",
+      "type": "CONCEPT",
+      "properties": {
+        "context": "刘伟是算法团队负责人，专注于机器学习算法研发",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "注于机器学习算法": {
+      "id": "CONCEPT_6",
+      "text": "注于机器学习算法",
+      "type": "CONCEPT",
+      "properties": {
+        "context": "刘伟是算法团队负责人，专注于机器学习算法研发",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "领域的核心技术": {
+      "id": "CONCEPT_7",
+      "text": "领域的核心技术",
+      "type": "CONCEPT",
+      "properties": {
+        "context": "深度学习是当前AI领域的核心技术",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "化的知识表示方法": {
+      "id": "CONCEPT_8",
+      "text": "化的知识表示方法",
+      "type": "CONCEPT",
+      "properties": {
+        "context": "知识图谱是一种结构化的知识表示方法",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "多模态大模型": {
+      "id": "CONCEPT_9",
+      "text": "多模态大模型",
+      "type": "CONCEPT",
+      "properties": {
+        "context": "2024年，多模态大模型成为研究热点",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "司和自动驾驶技术": {
+      "id": "CONCEPT_10",
+      "text": "司和自动驾驶技术",
+      "type": "CONCEPT",
+      "properties": {
+        "context": "华兴科技投资了智能医疗科技有限公司和自动驾驶技术有限公司",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    }
+  },
+  "relations": []
+}

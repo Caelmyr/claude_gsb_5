@@ -1,0 +1,75 @@
+{
+  "entities": {
+    "2023年": {
+      "id": "TIME_0",
+      "text": "2023年",
+      "type": "TIME",
+      "properties": {
+        "context": "2023年，OpenAI公司发布了GPT-4模型",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "2024年": {
+      "id": "TIME_1",
+      "text": "2024年",
+      "type": "TIME",
+      "properties": {
+        "context": "2024年，多模态大模型成为研究热点",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "2020年1月": {
+      "id": "TIME_2",
+      "text": "2020年1月",
+      "type": "TIME",
+      "properties": {
+        "context": "2020年1月，华兴科技成立",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "2021年3月": {
+      "id": "TIME_3",
+      "text": "2021年3月",
+      "type": "TIME",
+      "properties": {
+        "context": "2021年3月，公司获得天使轮融资",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "2022年6月": {
+      "id": "TIME_4",
+      "text": "2022年6月",
+      "type": "TIME",
+      "properties": {
+        "context": "2022年6月，公司发布首款产品",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "2023年9月": {
+      "id": "TIME_5",
+      "text": "2023年9月",
+      "type": "TIME",
+      "properties": {
+        "context": "2023年9月，公司获得A轮融资",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    },
+    "2024年12月": {
+      "id": "TIME_6",
+      "text": "2024年12月",
+      "type": "TIME",
+      "properties": {
+        "context": "2024年12月，公司计划上市",
+        "doc_id": "0f1402c0"
+      },
+      "count": 1
+    }
+  },
+  "relations": []
+}
