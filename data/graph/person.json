@@ -1,0 +1,15 @@
+{
+  "entities": {
+    "华兴科技总": {
+      "id": "PERSON_0",
+      "text": "华兴科技总",
+      "type": "PERSON",
+      "properties": {
+        "context": "华兴科技总部位于北京市海淀区中关村科技园",
+        "doc_id": "04cbd05f"
+      },
+      "count": 1
+    }
+  },
+  "relations": []
+}

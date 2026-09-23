@@ -395,6 +395,32 @@
         const API_BASE = '';
         let entityTypeChart, relationTypeChart;
 
+        // 实体类型固定颜色映射（与图谱页 colorMap、类型徽章样式保持一致）
+        const TYPE_COLORS = {
+            'PERSON': '#ff6b6b',
+            'ORG': '#4ecdc4',
+            'LOCATION': '#ffd166',
+            'TIME': '#a882ff',
+            'CONCEPT': '#66ffcc',
+            'EVENT': '#ff9f40',
+            'OTHER': '#888888'
+        };
+
+        // 类型固定展示顺序，保证每次刷新图例顺序一致
+        const TYPE_ORDER = ['PERSON', 'ORG', 'LOCATION', 'TIME', 'CONCEPT', 'EVENT', 'OTHER'];
+
+        // 获取实体类型颜色：已知类型用固定色，未知类型按名称哈希生成确定的颜色
+        function getTypeColor(type) {
+            if (TYPE_COLORS[type]) {
+                return TYPE_COLORS[type];
+            }
+            let hash = 0;
+            for (let i = 0; i < type.length; i++) {
+                hash = (hash * 31 + type.charCodeAt(i)) >>> 0;
+            }
+            return `hsl(${hash % 360}, 70%, 60%)`;
+        }
+
         // 初始化
         document.addEventListener('DOMContentLoaded', () => {
             loadAllData();
@@ -478,11 +504,15 @@
                 entityTypeChart.destroy();
             }
 
-            const labels = Object.keys(entityCounts);
-            const values = Object.values(entityCounts);
-            const colors = [
-                '#ff6b6b', '#4ecdc4', '#ffd166', '#a882ff', '#66ffcc', '#888'
-            ];
+            // 按固定类型顺序排列，保证颜色与类型的对应关系稳定
+            const labels = Object.keys(entityCounts).sort((a, b) => {
+                const ia = TYPE_ORDER.indexOf(a);
+                const ib = TYPE_ORDER.indexOf(b);
+                return (ia === -1 ? TYPE_ORDER.length : ia) - (ib === -1 ? TYPE_ORDER.length : ib);
+            });
+            const values = labels.map(label => entityCounts[label]);
+            // 每种类型使用固定颜色，与图例、类型徽章保持一致
+            const backgroundColors = labels.map(label => getTypeColor(label));
 
             entityTypeChart = new Chart(ctx, {
                 type: 'doughnut',
@@ -490,7 +520,7 @@
                     labels: labels,
                     datasets: [{
                         data: values,
-                        backgroundColor: colors.slice(0, labels.length),
+                        backgroundColor: backgroundColors,
                         borderWidth: 0
                     }]
                 },

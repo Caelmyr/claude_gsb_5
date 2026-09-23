@@ -1,0 +1,125 @@
+{
+  "entities": {
+    "中国": {
+      "id": "LOCATION_0",
+      "text": "中国",
+      "type": "LOCATION",
+      "properties": {
+        "context": "中国科技企业发展报告",
+        "doc_id": "04cbd05f"
+      },
+      "count": 1
+    },
+    "北京": {
+      "id": "LOCATION_1",
+      "text": "北京",
+      "type": "LOCATION",
+      "properties": {
+        "context": "北京大学信息科学技术学院智能科学系在自然语言处理方面有深入研究",
+        "doc_id": "04cbd05f"
+      },
+      "count": 1
+    },
+    "公司计划上市": {
+      "id": "LOCATION_2",
+      "text": "公司计划上市",
+      "type": "LOCATION",
+      "properties": {
+        "context": "2024年12月，公司计划上市",
+        "doc_id": "04cbd05f"
+      },
+      "count": 1
+    },
+    "科技总部位于北京市": {
+      "id": "LOCATION_3",
+      "text": "科技总部位于北京市",
+      "type": "LOCATION",
+      "properties": {
+        "context": "华兴科技总部位于北京市海淀区中关村科技园",
+        "doc_id": "04cbd05f"
+      },
+      "count": 1
+    },
+    "海淀区中关村": {
+      "id": "LOCATION_4",
+      "text": "海淀区中关村",
+      "type": "LOCATION",
+      "properties": {
+        "context": "华兴科技总部位于北京市海淀区中关村科技园",
+        "doc_id": "04cbd05f"
+      },
+      "count": 1
+    },
+    "公司在上海市": {
+      "id": "LOCATION_5",
+      "text": "公司在上海市",
+      "type": "LOCATION",
+      "properties": {
+        "context": "公司在上海市浦东新区设有分公司",
+        "doc_id": "04cbd05f"
+      },
+      "count": 1
+    },
+    "上海": {
+      "id": "LOCATION_6",
+      "text": "上海",
+      "type": "LOCATION",
+      "properties": {
+        "context": "公司在上海市浦东新区设有分公司",
+        "doc_id": "04cbd05f"
+      },
+      "count": 1
+    },
+    "浦东新区": {
+      "id": "LOCATION_7",
+      "text": "浦东新区",
+      "type": "LOCATION",
+      "properties": {
+        "context": "公司在上海市浦东新区设有分公司",
+        "doc_id": "04cbd05f"
+      },
+      "count": 1
+    },
+    "公司在深圳市南山区": {
+      "id": "LOCATION_8",
+      "text": "公司在深圳市南山区",
+      "type": "LOCATION",
+      "properties": {
+        "context": "公司在深圳市南山区设有研发中心",
+        "doc_id": "04cbd05f"
+      },
+      "count": 1
+    },
+    "深圳": {
+      "id": "LOCATION_9",
+      "text": "深圳",
+      "type": "LOCATION",
+      "properties": {
+        "context": "公司在深圳市南山区设有研发中心",
+        "doc_id": "04cbd05f"
+      },
+      "count": 1
+    },
+    "公司在杭州市西湖区": {
+      "id": "LOCATION_10",
+      "text": "公司在杭州市西湖区",
+      "type": "LOCATION",
+      "properties": {
+        "context": "公司在杭州市西湖区设有办事处",
+        "doc_id": "04cbd05f"
+      },
+      "count": 1
+    },
+    "杭州": {
+      "id": "LOCATION_11",
+      "text": "杭州",
+      "type": "LOCATION",
+      "properties": {
+        "context": "公司在杭州市西湖区设有办事处",
+        "doc_id": "04cbd05f"
+      },
+      "count": 1
+    }
+  },
+  "relations": []
+}
